@@ -16,7 +16,7 @@ Before running this project, make sure you have:
 
 1. Clone the repository
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Anshuman-Tripathi-unknown/to-Do-List-Version-2.0.git
 cd to-Do-List-Version-2.0
 ```
 
@@ -49,7 +49,7 @@ The application uses nodemon for development, which will automatically restart t
 
 ## License
 
-This project is licensed under the ISC License.
+This project is licensed under the MIT License.
 
 ## Contributing
 
