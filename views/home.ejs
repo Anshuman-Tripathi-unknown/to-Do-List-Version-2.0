@@ -1,0 +1,6 @@
+<%- include("partials/header")-%>
+<%posts.forEach(function(i){%>
+<h1><%=i.title%></h1>
+<p><%=i.post.slice(0,100)%><%if(i.post.length>100){%>...<a href="/posts/<%=i.title%>">Read More</a><%}%> <span style="align-self: right; font-weight: bold;"><%=i.status%></span></p>
+<%});%>
+<%- include("partials/footer")-%>

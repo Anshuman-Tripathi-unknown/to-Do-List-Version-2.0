@@ -1,0 +1,16 @@
+<%- include("partials/header")-%>
+<h1>Compose</h1>
+    <form action="/compose" method="post">
+        <div class="form-group">
+            <label class="form-label">Title</label>
+            <input class="form-control" type="text" name="title">
+            <label class="form-label">Decription</label>
+            <textarea class="form-control" name="post" rows="5" cols="30"></textarea>
+            <label class="form-label">Status</label><br>
+            <input name="status" value="pending" type="radio" checked>pending</input>
+            <input name="status" value="in-progress" type="radio">in-progress</input>
+            <input name="status" value="completed" type="radio">completed</input>
+        </div>
+        <button class="btn btn-primary" type="submit" name="submit" >Publish</button>
+    </form>
+<%- include("partials/footer")-%>

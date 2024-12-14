@@ -1,0 +1,16 @@
+<%- include("partials/header")-%>
+<h1><%=title%></h1>
+<p><%=body%></p>
+<p><%=status%></p>
+<div>
+<form action="/update" method="post">
+    <div class="form-group">
+        <label class="form-label">Update Status</label><br>
+        <input name="status" value="pending" type="radio" checked>pending</input>
+        <input name="status" value="in-progress" type="radio">in-progress</input>
+        <input name="status" value="completed" type="radio">completed</input>
+    </div>
+    <button class="btn btn-primary" type="submit" name="submit" value="<%= title %>">Update</button>
+</form>
+</div>
+<%- include("partials/footer")-%>
